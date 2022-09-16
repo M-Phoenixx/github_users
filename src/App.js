@@ -46,7 +46,7 @@ const App = () => {
       <h2> {data.followers} </h2>
       </div>
       <div className="follwing-box">
-      <h1> Following </h1>
+      <h1> Following</h1>
       <h2> {data.following} </h2>
       </div>
       </div>
