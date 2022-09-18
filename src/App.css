@@ -1,13 +1,19 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.container{
-  width: 100vw;
-  height: 100%;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradientBG 15s ease infinite;
+  padding: 2rem;
 }
 @keyframes gradientBG {
   0% {
@@ -22,101 +28,52 @@
 }
 
 .navbar{
-background: rgba(255, 255, 255, 0.16);
+  padding: 2rem;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.2px);
--webkit-backdrop-filter: blur(2.2px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-display: flex;
-padding: 1rem;
-justify-content: center;
-flex-wrap: wrap;
-color: snow;
+backdrop-filter: blur(1.3px);
+-webkit-backdrop-filter: blur(1.3px);
+border: 1px solid rgba(255, 255, 255, 0.11);
 }
-
-.card-uper > img{
- width: 10rem;
- height: 10rem;
- border-radius: 5rem;
+.searchbar > input{
+outline-width: 0;
+border-width: 0;
+padding: .7rem;
+border-radius: 1.4rem 0 0 1.4rem;
 }
-
-.card-uper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  flex-direction: column;
-}
-
-.input{
-  display: flex;
-  align-items: center;
-  padding: 5px;
-}
-.input > input{
-  padding: .3rem;
+.searchbar > button{
   outline-width: 0;
-  border-width: 0;
+border-width: 0;
+padding: .7rem;
+border-radius: 0 1.4rem 1.4rem 0;
+cursor: pointer;
+background: gray;
 }
-.input > .MuiSvgIcon-root{
-   color: snow;
-   margin: .6rem;
-   font-size: 1.8rem;
-}
-
-.card-uper-details{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.searchbar > button:hover{
+  background: rgb(82, 99, 105);
 }
 
-.user-name{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.detail-card{
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.3px);
+-webkit-backdrop-filter: blur(1.3px);
+border: 1px solid rgba(255, 255, 255, 0.11);
+padding: 1rem;
+display: flex;
+flex-direction: column;
 }
 
-.user-name > h1{
-  font-size: 1.8rem;
-  color: snow;
+.uper-part{
+ flex: .7;
+ background: rgb(223, 8, 8);
+}
+.lower-part{
+  flex: .3;
+  background: blue;
 }
 
-.user-follow{
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: snow;
-}
-.black{
-  color: black;
-  padding-right: 8px;
-}
-.detail{
-  display: flex;
-  padding: 1rem;
-}
-.socialmedia >img{
-  width: 3rem;
-  padding: 1rem;
-  cursor: pointer;
-}
-.card-lower{
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-
-.user-work{
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-.user-work {
-  color: snow;
-}
 
