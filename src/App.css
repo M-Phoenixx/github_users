@@ -27,8 +27,16 @@ body {
   }
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .navbar{
   padding: 2rem;
+  width: fit-content;
 background: rgba(255, 255, 255, 0.2);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -56,7 +64,7 @@ background: gray;
 
 .detail-card{
   margin: 2rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(8, 233, 233, 0.2);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(1.3px);
@@ -69,11 +77,65 @@ flex-direction: column;
 
 .uper-part{
  flex: .7;
- background: rgb(223, 8, 8);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 1rem;
 }
+.uper-part > img{
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10rem;
+}
+
+.name-follow{
+  display: flex;
+  flex-direction: column;
+}
+.name-follow > h1{
+  font-size: 2.4rem;
+}
+
+.user-detail{
+  display: flex;
+}
+
+.project{
+  display: flex;
+  font-size: 1.5rem;
+  padding: .8rem;
+  font-weight: lighter;
+  align-items: center;
+}
+.project > p{
+  font-weight: bold;
+  color: rgb(14, 10, 10);
+  padding: .3rem;
+}
+.work{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.work > h1{
+  font-size: 1.8rem;
+}
+
 .lower-part{
   flex: .3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lower-part > button{
+  padding: .8rem;
+  width: 10rem;
+  height: 3rem;
   background: blue;
+  color: snow;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
 }
 
 
