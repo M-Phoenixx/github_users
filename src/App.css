@@ -135,6 +135,7 @@ flex-direction: column;
   color: snow;
   font-size: 1rem;
   font-weight: bold;
+  cursor: pointer;
   border: none;
 }
 
