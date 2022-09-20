@@ -61,7 +61,9 @@ const App = () => {
        </div>
      </div>
      <div className="lower-part">
-       <button  > Visite Profile </button>
+     <a target='blank' href={data.html_url}>
+       <button className='button' > Visite Profile </button>
+       </a>
      </div>
     </div> : <h1>enter user name</h1>}
 
